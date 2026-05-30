@@ -1,0 +1,20 @@
+praw>=7.7.0
+vaderSentiment>=3.3.2
+yfinance>=0.2.38
+pandas>=2.0.0
+numpy>=1.26.0
+scikit-learn>=1.4.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+joblib>=1.3.0
+
+# Enhancement: XGBoost model comparison
+xgboost>=2.0.0
+
+# Stretch Goal 2: Dashboard
+streamlit>=1.35.0
+plotly>=5.20.0
+
+# Stretch Goal 1: FinancialBERT (heavy — only install if using score_bert.py)
+# transformers>=4.40.0
+# torch>=2.2.0
