@@ -104,7 +104,7 @@ Every day, millions of retail investors discuss markets on Reddit. This project 
 ### Walk-Forward Cross-Validation — AUC per Fold
 
 <p align="center">
-  <img src="reports/walk_forward_auc.png" alt="Walk-Forward AUC" width="80%"/>
+  <img src="mood_mapper/reports/walk_forward_auc.png" alt="Walk-Forward AUC" width="80%"/>
 </p>
 
 | Fold | Train Size | Test Size | AUC | Accuracy | F1 |
@@ -123,7 +123,7 @@ Every day, millions of retail investors discuss markets on Reddit. This project 
 ### Feature Importance (Logistic Regression Coefficients)
 
 <p align="center">
-  <img src="reports/feature_importance.png" alt="Feature Importance" width="80%"/>
+  <img src="mood_mapper/reports/feature_importance.png" alt="Feature Importance" width="80%"/>
 </p>
 
 Positive coefficients push the model toward predicting "UP", negative toward "DOWN". The L2 regularisation (C=0.1) keeps all coefficients small, preventing overfitting to the synthetic training data.
@@ -133,7 +133,7 @@ Positive coefficients push the model toward predicting "UP", negative toward "DO
 ### Sentiment vs Returns Scatter
 
 <p align="center">
-  <img src="reports/sentiment_vs_returns.png" alt="Sentiment vs Returns" width="80%"/>
+  <img src="mood_mapper/reports/sentiment_vs_returns.png" alt="Sentiment vs Returns" width="80%"/>
 </p>
 
 Each dot represents one trading day. **Green = SPY went up next day, Red = SPY went down.** A perfect predictor would show a clear green cluster on the right and red on the left. The current spread reflects the challenge of predicting markets from text alone.
@@ -143,7 +143,7 @@ Each dot represents one trading day. **Green = SPY went up next day, Red = SPY w
 ### Confusion Matrix (Last Fold)
 
 <p align="center">
-  <img src="reports/confusion_matrix.png" alt="Confusion Matrix" width="50%"/>
+  <img src="mood_mapper/reports/confusion_matrix.png" alt="Confusion Matrix" width="50%"/>
 </p>
 
 ---
@@ -151,11 +151,11 @@ Each dot represents one trading day. **Green = SPY went up next day, Red = SPY w
 ### Model Comparison — Logistic Regression vs XGBoost
 
 <p align="center">
-  <img src="reports/model_comparison_auc.png" alt="Model Comparison AUC" width="80%"/>
+  <img src="mood_mapper/reports/model_comparison_auc.png" alt="Model Comparison AUC" width="80%"/>
 </p>
 
 <p align="center">
-  <img src="reports/model_comparison_summary.png" alt="Model Comparison Summary" width="80%"/>
+  <img src="mood_mapper/reports/model_comparison_summary.png" alt="Model Comparison Summary" width="80%"/>
 </p>
 
 | Model | Mean AUC | Mean Accuracy | Mean F1 |
@@ -170,7 +170,7 @@ XGBoost edges out Logistic Regression on AUC. The better AUC with lower F1 sugge
 ### 💹 Paper Trading Simulation — Last 30 Days
 
 <p align="center">
-  <img src="reports/paper_trade_equity_curve.png" alt="Paper Trade Equity Curve" width="90%"/>
+  <img src="mood_mapper/reports/paper_trade_equity_curve.png" alt="Paper Trade Equity Curve" width="90%"/>
 </p>
 
 **Strategy:** Buy SPY when model predicts "up", hold cash otherwise. Starting capital: **$10,000**.
