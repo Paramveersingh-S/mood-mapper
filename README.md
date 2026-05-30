@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.png" alt="Mood-to-Market Mapper Banner" width="100%"/>
+  <img src="mood_mapper/assets/banner.png" alt="Mood-to-Market Mapper Banner" width="100%"/>
 </p>
 
 <h1 align="center">📈 Mood-to-Market Mapper</h1>
