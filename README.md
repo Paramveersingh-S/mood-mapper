@@ -447,7 +447,6 @@ streamlit run dashboard.py
 
 | Error | Cause | Fix |
 |---|---|---|
-| `CommandNotFoundException: claude` | Claude Code not in PATH | Open a new terminal window |
 | `"Model not found"` (OpenRouter) | Wrong model ID | Check exact ID at openrouter.ai/models |
 | `429 rate limit` | Free model quota hit | Wait 60s or switch model |
 | `UnicodeEncodeError` (Windows) | cp1252 console | Run with `$env:PYTHONIOENCODING='utf-8'` |
